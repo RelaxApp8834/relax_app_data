@@ -1,0 +1,230 @@
+[
+    {
+        "display-name":"Xnxx",
+        "channel": "xnxx",
+        "baseurl": "https://www.xnxx.com",
+        "rootCssQuery": ".thumb-block",
+        "name": {
+            "cssQuery": ".thumb-under a",
+            "attr": "title"
+        },
+        "thumb": {
+            "cssQuery": "img",
+            "attr": "data-src",
+            "replace": [
+                "THUMBNUM",
+                "1"
+            ]
+        },
+        "viewCount": {
+            "selectType": "all",
+            "cssQuery": "right"
+        },
+        "duration": {
+            "selectType": "all",
+            "cssQuery": "metadata"
+        },
+        "url": {
+            "cssQuery": "a",
+            "attr": "href"
+        },
+        "preview": "20"
+    },
+    {
+        "display-name":"Xvideos",
+        "channel": "xvideos",
+        "baseurl": "https://www.xvideos.com",
+        "rootCssQuery": ".thumb-block",
+        "name": {
+            "cssQuery": ".thumb-under a",
+            "attr": "title"
+        },
+        "thumb": {
+            "cssQuery": "img",
+            "attr": "data-src",
+            "replace": [
+                "THUMBNUM",
+                "1"
+            ]
+        },
+        "viewCount": {
+            "cssQuery": "metadata",
+            "regex": "-\\s(.*?)\\s+views"
+        },
+        "duration": {
+            "selectType": "all",
+            "cssQuery": "duration"
+        },
+        "url": {
+            "cssQuery": "a",
+            "attr": "href"
+        },
+        "preview": "20"
+    },
+    {
+        "display-name":"Eporner",
+        "channel": "eporner",
+        "baseurl": "https://www.eporner.com",
+        "rootCssQuery": ".mb",
+        "name": {
+            "cssQuery": "img",
+            "attr": "alt"
+        },
+        "thumb": {
+            "cssQuery": "img",
+            "attr": {
+                "attrs": [
+                    "src",
+                    "data-src"
+                ],
+                "startWith": "http"
+            }
+        },
+        "viewCount": {
+            "cssQuery": ".mbvie"
+        },
+        "duration": {
+            "cssQuery": ".mbtim"
+        },
+        "url": {
+            "cssQuery": "a",
+            "attr": "href"
+        }
+    },
+    {
+        "display-name":"PornHub",
+        "channel": "pornhub",
+        "baseurl": "https://www.pornhub.com",
+        "rootCssQuery": ".videoList li",
+        "name": {
+            "cssQuery": "img",
+            "attr": "alt"
+        },
+        "thumb": {
+            "cssQuery": "img",
+            "attr": "src"
+        },
+        "viewCount": {
+            "cssQuery": ".views"
+        },
+        "duration": {
+            "cssQuery": ".time"
+        },
+        "url": {
+            "cssQuery": "a",
+            "attr": "href"
+        },
+        "preview":{
+            "cssQuery":"img",
+            "attr":"data-mediabook"
+        }
+    },
+    {
+        "display-name":"Xhamster",
+        "channel": "xhamster",
+        "baseurl": "https://xhamster.com",
+        "rootCssQuery": ".mobile-video-thumb[data-role=mobile-video-thumb]",
+        "name": {
+            "cssQuery": "img",
+            "attr": "alt"
+        },
+        "thumb": {
+            "cssQuery": "img",
+            "attr": "src",
+            "selectType":"all"
+        },
+        "viewCount": {
+            "cssQuery": ".video-thumb-views",
+            "replace":["views",""]
+        },
+        "duration": {
+            "cssQuery": "time"
+        },
+        "url": {
+            "cssQuery": "a",
+            "attr": "href"
+        },
+        "preview":{
+            "cssQuery":"a",
+            "attr":"data-previewvideo"
+        }
+    },
+    {
+        "display-name":"Youporn",
+        "channel": "youporn",
+        "baseurl": "https://www.youporn.com",
+        "rootCssQuery": ".video-box",
+        "name": {
+            "cssQuery": ".video-title"
+        },
+        "thumb": {
+            "cssQuery": "img",
+            "attr": {
+                "attrs": [
+                    "src",
+                    "data-src"
+                ],
+                "startWith": "http"
+            }
+        },
+        "viewCount": {
+            "cssQuery": ".video-best-resolution"
+        },
+        "duration": {
+            "cssQuery": ".video-duration"
+        },
+        "url": {
+            "cssQuery": "a",
+            "attr": "href"
+        },
+        "preview":"20"
+    },
+     {
+        "display-name":"RedTube",
+        "channel": "redtube",
+        "baseurl": "https://www.redtube.com",
+        "rootCssQuery": "#browse_section li",
+        "name": {
+            "cssQuery": ".video_title a"
+        },
+        "thumb": {
+            "cssQuery": "img",
+            "attr": "src"
+        },
+        "viewCount": {
+            "cssQuery": ".video_count"
+        },
+        "duration": {
+            "cssQuery": ".tm_video_duration"
+        },
+        "url": {
+            "cssQuery": "a",
+            "attr": "href"
+        },
+        "preview":{
+            "cssQuery":"img",
+            "attr":"data-thumbs"
+        }
+    },
+    {
+        "display-name":"HQ Porner",
+        "channel": "hqporner",
+        "baseurl": "https://hqporner.com",
+        "rootCssQuery": "section",
+        "name": {
+            "cssQuery": "a"
+        },
+        "thumb": {
+            "cssQuery": "img",
+            "attr": "src"
+        },
+        "duration": {
+            "cssQuery": ".meta-data"
+        },
+        "url": {
+            "cssQuery": "a",
+            "attr": "href"
+        },
+        "preview":"10"
+    }
+]
