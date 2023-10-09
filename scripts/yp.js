@@ -1,21 +1,20 @@
 const list = [];
-document.body.innerHTML
 const eles = document.getElementsByClassName('video-box');
 for (let i = 0; i < eles.length; i++) {
     try {
         let ele = eles[i];
-        let mName = ele.querySelector('.video-title').textContent;
-        let thumbEle = ele.getElementsByTagName('img'); 
+        const name = ele.querySelector('.video-title').textContent.trim();
+        let thumbEle = ele.querySelector('img'); 
         let thumb = thumbEle.getAttribute('src')+'';
         if(!thumb.startsWith('http')){
             thumb = thumbEle.getAttribute('data-src');
         }
-        let viewCount = ele.querySelector('.video-best-resolution').textContent;
-        let duration = ele.querySelector('.video-duration').textContent;
+        let viewCount = ele.querySelector('.video-best-resolution').textContent.trim();
+        let duration = ele.querySelector('.video-duration').textContent.trim();
         // let preview = thumbEle.getAttribute('data-webm');
         let url = ele.querySelector('a').getAttribute('href'); 
         list.push({
-            'name': mName,
+            'name': name,
             'thumb': thumb,
             'viewcount': viewCount,
             'duration': duration,
