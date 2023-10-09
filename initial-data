@@ -1,0 +1,14 @@
+[
+    {
+        "display-name": "Xnxx",
+        "channel": "xnxx",
+        "baseurl": "https://www.xnxx.com",
+        "video-script": "const list = [];\nconst eles = document.querySelectPorAll('.thumb-block');\nfor (let i = 0; i < eles.length; i++) { // Fixed the loop condition\ntry {\nlet ele = eles[i];\nlet mName = ele.querySelector('.thumb-under a').getAttribute('title'); // Use getAttribute to access attributes\nlet mThumb = ele.getElementsByTagName('img')[0].getAttribute('src'); // Use getAttribute to access attributes, added [0] to select the first img\nmThumb = mThumb.replace('THUMBNUM', '1');\nlet viewCount = ele.querySelector('.right').textContent;\nlet duration = ele.querySelector('.metadata').textContent;\nlet url = ele.querySelector('a').getAttribute('href');list.push({\n'name': mName,\n'thumb': mThumb,\n'viewcount': viewCount,\n'duration':duration,\n'url': url\n});\n}catch(e){\nlist.push(e);\n }\n}\nlist;"
+    },
+    {
+        "display-name": "Youporn",
+        "channel": "youporn",
+        "baseurl": "https://www.youporn.com",
+        "video-script":"\nconst list = [];\ndocument.body.innerHTML\nconst eles = document.getElementsByClassName('video-box');\nfor (let i = 0; i < eles.length; i++) {\n try {\n let ele = eles[i];\n let mName = ele.querySelector('.video-title').textContent;\n let thumbEle = ele.getElementsByTagName('img'); \n let thumb = thumbEle.getAttribute('src')+'';\n if(!thumb.startsWith('http')){\n thumb = thumbEle.getAttribute('data-src');\n }\n let viewCount = ele.querySelector('.video-best-resolution').textContent;\n let duration = ele.querySelector('.video-duration').textContent;\n // let preview = thumbEle.getAttribute('data-webm');\n let url = ele.querySelector('a').getAttribute('href'); \n list.push({\n 'name': mName,\n 'thumb': thumb,\n 'viewcount': viewCount,\n 'duration': duration,\n // 'preview':preview,\n 'url': url\n });\n } catch (e) {\n list.push(e.toString());\n }\n}\nlist;"
+    }
+]
