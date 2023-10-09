@@ -21,8 +21,6 @@ for (let i = 0; i < eles.length; i++) {
             // 'preview':preview,
             'url': url
         });
-    } catch (e) {
-        list.push(e.toString());
-    }
+    } catch (e) {}
 }
 list;
