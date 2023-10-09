@@ -1,13 +1,15 @@
-[
-    {
-        "channel":"xnxx",
-        "url":"https://www.xnxx.com/search/jav/myindex",
-        "start":0
-    },
-    {
-        "channel":"youporn",
-        "url":"https://www.youporn.com/?page=myindex",
-        "start":1
-    }
-
-]
+{
+    "international":[
+        {
+            "channel":"xnxx",
+            "url":"https://www.xnxx.com/search/jav/myindex",
+            "start":0
+        },
+        {
+            "channel":"youporn",
+            "url":"https://www.youporn.com/?page=myindex",
+            "start":1
+        }
+    
+    ]
+}
