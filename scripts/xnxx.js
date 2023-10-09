@@ -1,24 +1,33 @@
 const list = [];
         const eles = document.querySelectorAll('.thumb-block');
-        for (let i = 0; i < eles.length; i++) { 
-
+        for (let i = 0; i < eles.length; i++) {
             try {
-                let ele = eles[i];
-                let mName = ele.querySelector('.thumb-under a').getAttribute('title');
-                let mThumb = ele.getElementsByTagName('img')[0].getAttribute('src'); 
-                mThumb = mThumb.replace('THUMBNUM', '1');
-                let viewCount = ele.querySelector('.right').textContent;
-                let duration = ele.querySelector('.metadata').textContent;
-                let url = ele.querySelector('a').getAttribute('href'); 
+                const ele = eles[i];
+                const name = ele.querySelector('.thumb-under a').getAttribute('title').trim();
+                let thumb = ele.querySelector('img').getAttribute('data-src'); 
+                thumb = thumb.replace('THUMBNUM', '1');
+                  const viewCountEle = ele.querySelector('.right');
+                let viewCount = '';
+                for (let node of viewCountEle.childNodes) {
+                    if (node.nodeType === Node.TEXT_NODE) {
+                        viewCount += node.textContent.trim();
+                    }
+                }
+                const durationEle = ele.querySelector('.metadata');
+                let duration = '';
+                for (let node of durationEle.childNodes) {
+                    if (node.nodeType === Node.TEXT_NODE) {
+                        duration += node.textContent.trim();
+                    }
+                }
+                const url = ele.querySelector('a').getAttribute('href'); 
                 list.push({
-                    'name': mName,
-                    'thumb': mThumb,
-                    'viewcount': viewCount,
+                    'name': name,
+                    'thumb': thumb,
+                    'viewCount': viewCount,
                     'duration': duration,
                     'url': url
                 });
-            } catch (e) {
-                list.push(e);
-            }
+            } catch (e) {}
         }
-        list;
+       list;
