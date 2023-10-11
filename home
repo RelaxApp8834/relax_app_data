@@ -9,7 +9,12 @@
             "channel":"youporn",
             "url":"https://www.youporn.com/?page=myindex",
             "start":1
-        }
+        },
+{
+"channel":"redtube",
+"url":"https://www.redtube.com/?page=myindex",
+"start":1
+}
     
     ]
 }
