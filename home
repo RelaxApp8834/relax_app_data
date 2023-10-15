@@ -2,17 +2,17 @@
     "international":[
         {
             "channel":"xnxx",
-            "url":"https://www.xnxx.com/search/jav/myindex",
+            "url":"https://www.xnxx.com/search/jav/{index}",
             "start":0
         },
         {
             "channel":"youporn",
-            "url":"https://www.youporn.com/?page=myindex",
+            "url":"https://www.youporn.com/?page={index}",
             "start":1
         },
 {
 "channel":"redtube",
-"url":"https://www.redtube.com/?page=myindex",
+"url":"https://www.redtube.com/?page={index}",
 "start":1
 }
     
