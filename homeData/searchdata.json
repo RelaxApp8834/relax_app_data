@@ -1,14 +1,14 @@
 [
     {
         "channel":"xnxx",
-        "url":"https://www.xnxx.com/search/{query}/{index}"
+        "url":"https://www.xnxx.com/search/{query}/{page}"
     },
     {
         "channel":"youporn",
-        "url":"https://www.youporn.com/search/?query={query}&page={index}"
+        "url":"https://www.youporn.com/search/?query={query}&page={page}"
     },
     {
         "channel":"redtube",
-        "url":"https://www.redtube.com/?search={query}&page={index}"
+        "url":"https://www.redtube.com/?search={query}&page={page}"
         }
 ]
