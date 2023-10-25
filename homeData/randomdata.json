@@ -1,0 +1,13 @@
+[
+    {
+        "channel": "xnxx",
+        "max-page":200,
+        "url": "https://www.xnxx.com/jav/{page}"
+    }
+        ,
+    {
+        "channel": "youporn",
+        "max-page":7500,
+        "url": "https://www.youporn.com/?page={page}"
+    }
+]
