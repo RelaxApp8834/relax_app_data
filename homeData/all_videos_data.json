@@ -1,0 +1,22 @@
+{
+    "international":[
+        {
+            "channel":"xnxx",
+            "url":"https://www.xnxx.com/search/jav/{page}"
+        },
+        {
+            "channel":"youporn",
+            "url":"https://www.youporn.com/?page={page}"
+        }
+    ],
+    "myanmar":[
+        {
+            "channel":"samusar",
+            "url":"https://www.samusar.com/latest-updates/{page}/"
+        },
+        {
+            "channel":"mrnoegyi",
+            "url":"https://mrnoegyi.com/?paged={page}"
+        }
+    ]
+}
