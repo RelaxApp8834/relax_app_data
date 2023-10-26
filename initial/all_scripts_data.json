@@ -18,14 +18,14 @@
         "script": " const list = [];let eles = document.querySelectorAll('.videoblock_list');if (eles.length == 0) { eles = document.querySelectorAll('.tm_video_block');}for (const ele of eles) { try {  const thumbEle = ele.querySelector('img');  const name = ele.querySelector('.video_title').textContent.trim();  let thumb = thumbEle.getAttribute('src');  if (thumb == null || !thumb.startsWith('http')) {thumb = thumbEle.getAttribute('data-src');  }  const previewThumbUrl = thumbEle.getAttribute('data-path');  const previewThumbCount = thumbEle.getAttribute('data-thumbs');  const previewUrl = thumbEle.getAttribute('data-mediabook');  const viewCount = ele.querySelector('.video_count').textContent.trim();  const duration = ele.querySelector('.tm_video_duration').textContent.trim();  const url = ele.querySelector('a').getAttribute('href');  if (url == null || url.length == 0) {continue;  }  list.push({'name': name,'thumb': thumb,'viewCount': viewCount,'duration': duration,'url': url,'previewThumbUrl': previewThumbUrl,'previewThumbCount': previewThumbCount,'previewUrl': previewUrl  }); } catch (e) {}}list;"
     },
     {
-        "display-name": "samusar",
-        "channel": "Samusar",
+        "display-name": "Samusar",
+        "channel": "samusar",
         "baseurl": "https://www.samusar.com/",
         "script": " const list = [];const eles = document.querySelectorAll('.list-videos .item');for (const ele of eles) { try {  let thumbEle = ele.querySelector('img');const name = ele.querySelector('.title').textContent.trim();  const thumb = thumbEle.getAttribute('src');  const previewUrl = thumbEle.getAttribute('data-preview');  const viewCount = ele.querySelector('.views').textContent.trim();  const addedTime = ele.querySelector('.added').textContent.trim();  const duration = ele.querySelector('.duration').textContent.trim();  const url = ele.querySelector('a').getAttribute('href');if(url == null || url.length==0){continue;  }  list.push({'name': name,'thumb': thumb,'viewCount': viewCount,'duration': duration,'url': url,'addedTime':addedTime,'previewUrl':previewUrl  }); } catch (e) {  list.push(e);  }}list;"
       },
     {
-        "display-name": "mrnoegyi",
-        "channel": "Mr Noe Gyi",
+        "display-name": "Mr Noe Gyi",
+        "channel": "mrnoegyi",
         "baseurl": "https://mrnoegyi.com/",
         "script": " const list = [];const eles = document.querySelectorAll('.gridshow-grid-post');for (const ele of eles) { try {  const thumbEle = ele.querySelector('img');const name = thumbEle.getAttribute('title').trim();  let thumb = null;  const thumbList = thumbEle.getAttribute('srcset').split(',');  if(thumbList.length == 0){thumb = thumbEle.getAttribute('src');  }else{thumb = thumbList[thumbList.length-1];if(thumb==null){thumb = thumbEle.getAttribute('src');}  }  const url = ele.querySelector('a').getAttribute('href');if(url == null || url.length==0){continue;  }  list.push({'name': name,'thumb': thumb,'url': url  }); } catch (e) {  list.push(e);  }}list;"
     }
