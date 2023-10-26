@@ -1,0 +1,32 @@
+[
+    {
+        "display-name": "Xnxx",
+        "channel": "xnxx",
+        "baseurl": "https://www.xnxx.com",
+        "script": " const list = [];const eles = document.querySelectorAll('.thumb-block');for (const ele of eles) { try {  const name = ele.querySelector('.thumb-under a').getAttribute('title').trim();  const thumbEle = ele.querySelector('img');  let thumb = thumbEle.getAttribute('data-src');  thumb = thumb.replace('THUMBNUM', '1');  let prefix = thumb.substring(0,thumb.lastIndexOf('.'));  prefix = prefix.substring(0,prefix.lastIndexOf('.'));  const ext = thumb.substring(thumb.lastIndexOf('.'));  const previewThumbUrl =  prefix +'.relaxindex'+ext;  const viewCountEle = ele.querySelector('.right');  let viewCount = '';  for (let node of viewCountEle.childNodes) {if (node.nodeType === Node.TEXT_NODE) { viewCount += node.textContent.trim().replace();}  }  const durationEle = ele.querySelector('.metadata');  let duration = '';  for (let node of durationEle.childNodes) {if (node.nodeType === Node.TEXT_NODE) { duration += node.textContent.trim();}  }  const url = ele.querySelector('a').getAttribute('href');  if(url==null || url.length==0){continue;  }  list.push({'name': name,'thumb': thumb,'viewCount': viewCount,'duration': duration,'url': url,'previewThumbUrl':previewThumbUrl,'previewThumbCount':20  }); } catch (e) { }}list;"
+    },
+    {
+        "display-name": "Youporn",
+        "channel": "youporn",
+        "baseurl": "https://www.youporn.com",
+        "script": " const list = [];const eles = document.getElementsByClassName('video-box');for (let i = 0; i < eles.length; i++) { try {  const ele = eles[i];  const name = ele.querySelector('.video-title').textContent.trim();  let thumbEle = ele.querySelector('img');let thumb = thumbEle.getAttribute('src')+'';  if(!thumb.startsWith('http')){thumb = thumbEle.getAttribute('data-src');  }  let prefix = thumb.substring(0,thumb.lastIndexOf(')'));  if(!prefix.startsWith('http')){prefix = thumb.substring(0,thumb.lastIndexOf('/'));  }  const ext = thumb.substring(thumb.lastIndexOf('.'));  const previewThumbUrl = prefix + '/relaxindex'+ext;  const previewUrl = thumbEle.getAttribute('data-webm');  const viewCount = ele.querySelector('.video-best-resolution').textContent.trim();  const duration = ele.querySelector('.video-duration').textContent.trim();  const url = ele.querySelector('a').getAttribute('href');if(url == null || url.length==0){continue;  }  list.push({'name': name,'thumb': thumb,'viewCount': viewCount,'duration': duration,'url': url,'previewThumbUrl':previewThumbUrl,'previewThumbCount':15,'previewUrl':previewUrl  }); } catch (e) {  list.push(e);  }}list;"
+    },
+    {
+        "display-name": "RedTube",
+        "channel": "redtube",
+        "baseurl": "https://www.redtube.com",
+        "script": " const list = [];let eles = document.querySelectorAll('.videoblock_list');if (eles.length == 0) { eles = document.querySelectorAll('.tm_video_block');}for (const ele of eles) { try {  const thumbEle = ele.querySelector('img');  const name = ele.querySelector('.video_title').textContent.trim();  let thumb = thumbEle.getAttribute('src');  if (thumb == null || !thumb.startsWith('http')) {thumb = thumbEle.getAttribute('data-src');  }  const previewThumbUrl = thumbEle.getAttribute('data-path');  const previewThumbCount = thumbEle.getAttribute('data-thumbs');  const previewUrl = thumbEle.getAttribute('data-mediabook');  const viewCount = ele.querySelector('.video_count').textContent.trim();  const duration = ele.querySelector('.tm_video_duration').textContent.trim();  const url = ele.querySelector('a').getAttribute('href');  if (url == null || url.length == 0) {continue;  }  list.push({'name': name,'thumb': thumb,'viewCount': viewCount,'duration': duration,'url': url,'previewThumbUrl': previewThumbUrl,'previewThumbCount': previewThumbCount,'previewUrl': previewUrl  }); } catch (e) {}}list;"
+    },
+    {
+        "display-name": "samusar",
+        "channel": "Samusar",
+        "baseurl": "https://www.samusar.com/",
+        "script": " const list = [];const eles = document.querySelectorAll('.list-videos .item');for (const ele of eles) { try {  let thumbEle = ele.querySelector('img');const name = ele.querySelector('.title').textContent.trim();  const thumb = thumbEle.getAttribute('src');  const previewUrl = thumbEle.getAttribute('data-preview');  const viewCount = ele.querySelector('.views').textContent.trim();  const addedTime = ele.querySelector('.added').textContent.trim();  const duration = ele.querySelector('.duration').textContent.trim();  const url = ele.querySelector('a').getAttribute('href');if(url == null || url.length==0){continue;  }  list.push({'name': name,'thumb': thumb,'viewCount': viewCount,'duration': duration,'url': url,'addedTime':addedTime,'previewUrl':previewUrl  }); } catch (e) {  list.push(e);  }}list;"
+      },
+    {
+        "display-name": "mrnoegyi",
+        "channel": "Mr Noe Gyi",
+        "baseurl": "https://mrnoegyi.com/",
+        "script": " const list = [];const eles = document.querySelectorAll('.gridshow-grid-post');for (const ele of eles) { try {  const thumbEle = ele.querySelector('img');const name = thumbEle.getAttribute('title').trim();  let thumb = null;  const thumbList = thumbEle.getAttribute('srcset').split(',');  if(thumbList.length == 0){thumb = thumbEle.getAttribute('src');  }else{thumb = thumbList[thumbList.length-1];if(thumb==null){thumb = thumbEle.getAttribute('src');}  }  const url = ele.querySelector('a').getAttribute('href');if(url == null || url.length==0){continue;  }  list.push({'name': name,'thumb': thumb,'url': url  }); } catch (e) {  list.push(e);  }}list;"
+    }
+]
