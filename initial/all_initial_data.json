@@ -1,0 +1,43 @@
+[
+    {
+        "display-name": "Xnxx",
+        "channel": "xnxx",
+        "baseurl": "https://www.xnxx.com",
+        "option":{
+            "rootCssQuery": ".thumb-block",
+            "name": {
+                "cssQuery": ".thumb-under a",
+                "attr": "title"
+            },
+            "thumb": {
+                "cssQuery": "img",
+                "attr": "data-src",
+                "replace":[
+                    "THUMBNUM",
+                    "1"
+                ]
+            },
+            "viewCount": {
+                "selectType": "all",
+                "cssQuery": "right"
+            },
+            "duration": {
+                "selectType": "all",
+                "cssQuery": "metadata"
+            },
+            "url": {
+                "cssQuery": "a",
+                "attr": "href"
+            },
+            "previewThumbCount": "20",
+            "previewThumbUrl": {
+                "cssQuery": "img",
+                "attr": "data-src",
+                "replace":[
+                    "(THUMBNUM|\\d+)\\.jpg",
+                    "{index}"
+                ]
+            }
+        }
+    }
+]
