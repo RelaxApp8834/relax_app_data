@@ -23,7 +23,7 @@
             },
             "duration": {
                 "index":0,
-                "cssQuery": "metadata"
+                "cssQuery": ".metadata"
             },
             "url": {
                 "cssQuery": "a",
