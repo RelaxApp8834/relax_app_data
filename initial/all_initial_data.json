@@ -18,8 +18,9 @@
                 ]
             },
             "viewCount": {
-                "selectType": "all",
-                "cssQuery": "right"
+                "index":0,
+                "cssQuery": ".right",
+                "attr":"innerHtml"
             },
             "duration": {
                 "index":0,
