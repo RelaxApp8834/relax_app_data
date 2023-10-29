@@ -20,12 +20,12 @@
             "viewCount": {
                 "index":0,
                 "cssQuery": ".right",
-                "attr":"innerHtml"
+                "attr":"ownText"
             },
             "duration": {
                 "index":0,
                 "cssQuery": ".metadata",
-                "attr":"innerHtml"
+                "attr":"ownText"
             },
             "url": {
                 "cssQuery": "a",
