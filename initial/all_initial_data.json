@@ -23,7 +23,8 @@
             },
             "duration": {
                 "index":0,
-                "cssQuery": ".metadata"
+                "cssQuery": ".metadata",
+                "attr":"innerHtml"
             },
             "url": {
                 "cssQuery": "a",
