@@ -29,7 +29,9 @@
                 "cssQuery": "a",
                 "attr": "href"
             },
-            "previewThumbCount": "20",
+            "previewThumbCount": {
+                "value":"20"
+            },
             "previewThumbUrl": {
                 "cssQuery": "img",
                 "attr": "data-src",
