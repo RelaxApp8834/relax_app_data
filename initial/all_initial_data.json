@@ -22,8 +22,9 @@
                 "cssQuery": "right"
             },
             "duration": {
-                "selectType": "all",
-                "cssQuery": "metadata"
+                "index":0,
+                "cssQuery": "metadata",
+                "attr":"owntext"
             },
             "url": {
                 "cssQuery": "a",
