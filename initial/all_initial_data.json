@@ -38,7 +38,7 @@
                 "cssQuery": "img",
                 "attr": "data-src",
                 "replace":[
-                    "(THUMBNUB|\\d+).jpg",
+                    "(THUMBNUM|\\d+).jpg",
                     "{index}.jpg"
                 ]
             }
