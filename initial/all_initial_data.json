@@ -51,7 +51,8 @@
         "option":{
             "rootCssQuery": ".list-videos .item",
             "name": {
-                "cssQuery": ".title"
+                "cssQuery": ".title",
+                "trim":true
             },
             "thumb": {
                 "cssQuery": "img",
