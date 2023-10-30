@@ -43,5 +43,40 @@
                 ]
             }
         }
+    },
+    {
+        "display-name": "Samusar",
+        "channel": "samusar",
+        "baseurl": "https://www.samusar.com",
+        "option":{
+            "rootCssQuery": ".list-videos .item",
+            "name": {
+                "cssQuery": ".title"
+            },
+            "thumb": {
+                "cssQuery": "img",
+                "attr": [
+                    "data-original",
+                    "data-webp"
+                ]
+            },
+            "viewCount": {
+                "cssQuery": ".views"
+            },
+            "duration": {
+                "cssQuery": ".duration"
+            },
+            "url": {
+                "cssQuery": "a",
+                "attr": "href"
+            },
+           "previewVideoUrl":{
+            "cssQuery":"img",
+            "attr":"data-preview"
+           },
+           "date":{
+            "cssQuery":".added"
+           }
+        }
     }
 ]
