@@ -135,9 +135,15 @@
                 "cssQuery": "img",
                 "attr": "alt"
             },
-            "thumb": {
+             "thumb": {
                 "cssQuery": "img",
-                "attr": "data-src"
+                "attr": {
+                    "attrs":[
+                        "src",
+                    "data-src"
+                    ],
+                    "regex":"^http"
+                }
             },
             "viewCount": {
                 "cssQuery": ".mbvie"
