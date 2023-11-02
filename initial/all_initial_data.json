@@ -79,5 +79,84 @@
             "cssQuery":".added"
            }
         }
+    },
+    {
+        "display-name": "Xvideos",
+        "channel": "xvideos",
+        "baseurl": "https://www.xvideos.com",
+        "option":{
+            "rootCssQuery": ".thumb-block",
+            "name": {
+                "cssQuery": ".thumb-under a",
+                "attr": "title"
+            },
+            "thumb": {
+                "cssQuery": "img",
+                "attr": "data-src",
+                "replace":[
+                    "THUMBNUM",
+                    "1"
+                ]
+            },
+            "viewCount": {
+                "index":0,
+                "cssQuery": ".metadata",
+                "attr":"ownText"
+            },
+            "duration": {
+                "index":0,
+                "cssQuery": ".duration",
+                "attr":"ownText"
+            },
+            "url": {
+                "cssQuery": "a",
+                "attr": "href"
+            },
+            "previewThumbCount": {
+                "value":"20"
+            },
+            "previewThumbUrl": {
+                "cssQuery": "img",
+                "attr": "data-src",
+                "replace":[
+                    "(THUMBNUM|\\d+).jpg",
+                    "{index}.jpg"
+                ]
+            }
+        }
+    },
+    {
+        "display-name": "Eporner",
+        "channel": "eporner",
+        "baseurl": "https://www.eporner.com",
+        "option":{
+            "rootCssQuery": ".mb",
+            "name": {
+                "cssQuery": "img",
+                "attr": "alt"
+            },
+            "thumb": {
+                "cssQuery": "img",
+                "attr": "data-src"
+            },
+            "viewCount": {
+                "cssQuery": ".mbvie"
+            },
+            "duration": {
+                "cssQuery": ".mbtim"
+            },
+            "url": {
+                "cssQuery": "a",
+                "attr": "href"
+            },
+            "previewVideoUrl":{
+                "cssQuery": "img",
+                "attr": "data-src",
+                "replace":[
+                    "/([^/]+)/[^/]+$",
+                    "/{matched}/{matched}-preview.webm"
+                ]
+            }
+        }
     }
 ]
