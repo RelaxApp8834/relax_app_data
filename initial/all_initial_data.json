@@ -157,7 +157,7 @@
             },
             "previewVideoUrl":{
                 "cssQuery": "img",
-                "attr": "attr": {
+                "attr": {
                     "attrs":[
                         "src",
                     "data-src"
