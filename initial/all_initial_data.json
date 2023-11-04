@@ -157,7 +157,13 @@
             },
             "previewVideoUrl":{
                 "cssQuery": "img",
-                "attr": "data-src",
+                "attr": "attr": {
+                    "attrs":[
+                        "src",
+                    "data-src"
+                    ],
+                    "regex":"^http"
+                },
                 "replace":[
                     "/([^/]+)/[^/]+$",
                     "/{matched}/{matched}-preview.webm"
