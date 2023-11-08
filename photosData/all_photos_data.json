@@ -1,0 +1,25 @@
+[
+    {
+        "display-name":"PornPics",
+        "channel":"pornpics",
+        "baseurl":"https://www.pornpics.com",
+        "main_page_data":{
+            "ispaging":false,
+        "rootCssQuery":"#main .thumbwook",
+
+            "name":{
+                "cssQuery":"h2"
+            },
+            "thumb":{
+                "cssQuery":"img",
+                "attr":"data-src"
+            },
+            "url":{
+                "cssQuery":"a",
+                "attr":"href"
+            }
+        },
+        "second_page_data":{}
+    }
+
+]
