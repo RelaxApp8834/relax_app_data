@@ -5,6 +5,21 @@
         "baseurl":"https://www.eporner.com/pics",
         "main-page":{
             "rootCssQuery":"mbphoto2",
+            "filters":[
+                {
+                    "display-name":"Most Recent",
+                    "selected":true,
+                    "value":""
+                },
+                {
+                    "display-name":"Most Viewed",
+                    "value":"/most-viewed/"
+                },
+                {
+                    "display-name":"Top Rated",
+                    "value":"/top-rated/"
+                }
+            ],
             "query-url":"https://www.eporner.com/pics/{page}/{filter}/",
             "name":{
                 "cssQuery":"mbtitphoto2"
