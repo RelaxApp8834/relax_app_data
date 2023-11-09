@@ -1,24 +1,37 @@
 [
-    {
-        "display-name": "PornPics",
-        "channel": "pornpics",
-        "baseurl": "https://www.pornpics.com",
-        "main_page_data": {
-            "ispaging": false,
-            "query-url": "https://www.pornpics.com",
-            "rootCssQuery": "#main .thumbwook",
-            "name": {
-                "cssQuery": "h2"
+       {
+        "display-name":"Eporner",
+        "channel":"eporner",
+        "baseurl":"https://www.eporner.com/pics",
+        "main-page":{
+            "rootCssQuery":"mbphoto2",
+            "query-url":"https://www.eporner.com/pics/{page}/{filter}/",
+            "name":{
+                "cssQuery":"mbtitphoto2"
             },
-            "thumb": {
-                "cssQuery": "img",
-                "attr": "data-src"
+            "thumb":{
+                "cssQuery":"img",
+                "attr":"src"
             },
-            "url": {
-                "cssQuery": "a",
-                "attr": "href"
+            "url":{
+                "cssQuery":"a",
+                "attr":"href"
             }
         },
-        "second_page_data": {}
+        "preview-page":{
+            "rootCssQuery":"mbphoto2",
+            "name":{
+                "cssQuery":"img",
+                "attr":"alt"
+            },
+            "thumb":{
+                "cssQuery":"img",
+                "attr":"src"
+            },
+            "url":{
+                "cssQuery":"a",
+                "attr":"href"
+            }
+        }
     }
 ]
