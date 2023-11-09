@@ -1,25 +1,24 @@
 [
     {
-        "display-name":"PornPics",
-        "channel":"pornpics",
-        "baseurl":"https://www.pornpics.com",
-        "main_page_data":{
-            "ispaging":false,
-        "rootCssQuery":"#main .thumbwook",
-
-            "name":{
-                "cssQuery":"h2"
+        "display-name": "PornPics",
+        "channel": "pornpics",
+        "baseurl": "https://www.pornpics.com",
+        "main_page_data": {
+            "ispaging": false,
+            "query-url": "https://www.pornpics.com",
+            "rootCssQuery": "#main .thumbwook",
+            "name": {
+                "cssQuery": "h2"
             },
-            "thumb":{
-                "cssQuery":"img",
-                "attr":"data-src"
+            "thumb": {
+                "cssQuery": "img",
+                "attr": "data-src"
             },
-            "url":{
-                "cssQuery":"a",
-                "attr":"href"
+            "url": {
+                "cssQuery": "a",
+                "attr": "href"
             }
         },
-        "second_page_data":{}
+        "second_page_data": {}
     }
-
 ]
