@@ -32,6 +32,10 @@
                 "cssQuery":"a",
                 "attr":"href"
             }
+        },
+        "view-page":{
+            "cssQuery":"photohref",
+            "attr":"href"
         }
     }
 ]
