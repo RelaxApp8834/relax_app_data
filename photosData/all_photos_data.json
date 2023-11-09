@@ -20,7 +20,7 @@
                     "value":"/top-rated/"
                 }
             ],
-            "query-url":"https://www.eporner.com/pics/{page}/{filter}/",
+            "query-url":"https://www.eporner.com/pics/{page}/{filter}",
             "name":{
                 "cssQuery":"mbtitphoto2"
             },
