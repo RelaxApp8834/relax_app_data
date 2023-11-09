@@ -4,7 +4,7 @@
         "channel":"eporner",
         "baseurl":"https://www.eporner.com/pics",
         "main-page":{
-            "rootCssQuery":"mbphoto2",
+            "rootCssQuery":".mbphoto2",
             "filters":[
                 {
                     "display-name":"Most Recent",
@@ -22,7 +22,7 @@
             ],
             "query-url":"https://www.eporner.com/pics/{page}/{filter}",
             "name":{
-                "cssQuery":"mbtitphoto2"
+                "cssQuery":".mbtitphoto2"
             },
             "thumb":{
                 "cssQuery":"img",
@@ -34,7 +34,7 @@
             }
         },
         "preview-page":{
-            "rootCssQuery":"mbphoto2",
+            "rootCssQuery":".mbphoto2",
             "name":{
                 "cssQuery":"img",
                 "attr":"alt"
@@ -49,7 +49,7 @@
             }
         },
         "view-page":{
-            "cssQuery":"photohref",
+            "cssQuery":".photohref",
             "attr":"href"
         }
     }
