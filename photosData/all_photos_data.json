@@ -34,8 +34,7 @@
             }
         },
         "preview-page":{
-                           "query-url":"https://www.eporner.com/pics{link}",
-
+            "query-url":"https://www.eporner.com{link}",
             "rootCssQuery":".mbphoto2",
             "name":{
                 "cssQuery":"img",
