@@ -14,11 +14,11 @@
                 },
                 {
                     "display-name":"Most Viewed",
-                    "value":"/most-viewed/"
+                    "value":"most-viewed/"
                 },
                 {
                     "display-name":"Top Rated",
-                    "value":"/top-rated/"
+                    "value":"top-rated/"
                 }
             ],
             "query-url":"https://www.eporner.com/pics/{page}/{filter}",
