@@ -52,7 +52,8 @@
         },
         "view-page":{
             "cssQuery":".photohref",
-            "attr":"href"
+            "attr":"href",
+            "link":"https://www.eporner.com{link}"
         }
     }
 ]
