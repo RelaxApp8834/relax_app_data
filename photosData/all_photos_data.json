@@ -53,7 +53,6 @@
             }
         },
         "view-page":{
-            "checkIsDirectLink":"/photo/",
             "cssQuery":".photohref",
             "attr":"href",
             "link":"https://www.eporner.com{link}"
