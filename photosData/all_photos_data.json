@@ -5,6 +5,7 @@
         "channel":"eporner",
         "baseurl":"https://www.eporner.com/pics",
         "main-page":{
+            "checkIsDirectLink":"/photo/",
             "ispaging":true,
             "rootCssQuery":".mbphoto2",
             "filters":[
