@@ -4,7 +4,7 @@
     "title": "",
     "description": "",
     "appUrl": "",
-  "dataVersion":0,
+  "dataVersion":1,
  "lastdataVersion":0,
-  "dataAppUrl":""
+"dataAppUrl":"https://github.com/RelaxApp8834/relax_app_data/raw/main/update/relaxdata.apk"
   }
