@@ -1,9 +1,9 @@
 {
-    "version": 3,
+    "version": 4,
     "force": true,
     "title": "ဗားရှင်းအသစ်ရပါပြီ",
-    "description": "errorတစ်ချို့ကိုပြင်ထားပြီးပိုမိုကောင်းမွန်လာပါတယ် ။ ယခုဆော့ဝဲကိုဖျက်ပြီး updateဒေါင်းထားတာသုံးပါ",
-    "appUrl": "https://www.mediafire.com/file/k59se6j9cfrrdld/relax_premium_v3.apk/file",
+    "description": "errorတစ်ချို့ကိုပြင်ထားပြီးပိုမိုကောင်းမွန်လာပါတယ် ။ ယခုဆော့ဝဲကိုဖျက်ပြီး updateဒေါင်းထားတဲ့ (အပန်းဖြေ) ဆော့ဝဲကိုသုံးပါ ။ အဆင်မပြေမှုများအတွက်တောင်းပန်ပါတယ် ။ ",
+    "appUrl": "https://www.mediafire.com/file/2iaj9jo12va518z/%25E1%2580%25A1%25E1%2580%2595%25E1%2580%2594%25E1%2580%25BA%25E1%2580%25B8%25E1%2580%2596%25E1%2580%25BC%25E1%2580%25B1.apk/file",
   "dataVersion":1,
  "lastdataVersion":0,
 "dataAppUrl":"https://github.com/RelaxApp8834/relax_app_data/raw/main/update/relaxdata.apk"
